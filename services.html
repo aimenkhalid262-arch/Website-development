@@ -1,0 +1,664 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petshop
+</title>
+<style>
+     body
+	 {
+		background-color:#fff;
+		overflow:auto;
+	 }
+	 body a{
+	 text-decoration:none;
+	 }
+      #container
+	  {
+	     	width:100%;
+			margin:10px auto 10px auto;
+		
+	  }
+	  .row{
+	  overflow:auto;
+	  }
+	  
+	  .logo{
+		 font-size:35px;
+		 margin-top:30px;
+		 color:solid-black;
+	 }
+	  
+	 .lg{
+		float:left;
+		overflow:auto;
+		
+	 }
+	 .lg img {
+	 width:100px;
+	 height:100px;
+	 }
+	 .search-box{
+		 float:right;
+		 overflow:auto;
+		 margin-top:25px;
+		 color: #000000;
+	 }
+	 .search-box input{
+		 border-radius:5px;
+		 border-style:none;
+		 height:30px;
+	 }
+	 .search-box a{
+		      color:#fff;
+			  background-color:#996633;
+			  text-decoration:none;
+			  padding:8px;
+			  border-radius:5px;
+			  width:10px;
+		 }
+	 
+	 #nav-bar{
+		 background-color:#996633;
+		 border-radius:5px 5px 0px 0px;
+		 height:40;
+		 padding-top:25px;
+		 padding-left:35px;
+		 text-align:center;
+	 }
+	 #nav-bar ul{
+		list-style:none;	
+		margin:0px;
+	 }
+	 #nav-bar ul li{
+	 display:block;
+	 width:100px;
+	 
+		float:left;
+	 }
+	 #nav-bar ul a{
+		 text-decoration:none;
+		 color:#FFF;
+	 }
+	  #nav-bar ul a:hover{
+	  color:#3b7a9d;
+	  }
+	 #slider img{
+		 z-index:1;
+		 width:400px;
+		 height:400px;
+		 color:#fff;
+		 margin:4px 4px 4px 4px;
+		 border:1px  #ffcccc;
+		 padding:5px;
+		 border-radius:1px;
+	 }
+	 #slider{
+		 padding:40px 0px 40px 0px;
+		 background-color:  #ffcccc;
+		 margin-bottom:-110px;
+		 height:500px;
+		 
+		 
+		
+	 
+	 }
+	 #slider1 img{
+		 z-index:1;
+		 width:400px;
+		 height:200px;
+		 color:#fff;
+		 margin:4px 4px 4px 4px;
+		 border:1px  #fff;
+		 padding:5px;
+		 border-radius:1px;
+	 }
+	 #slider1{
+		 padding:40px 0px 40px 40px;
+		 background-color:  #fff;
+		 margin-bottom:-110px;
+		 height:500px;
+		 
+		 
+		
+	 
+	 }
+	 #bg{z-index:1;
+		 width:400px;
+		 height:400px;
+		 color:#fff;
+		 margin:4px 4px 4px 4px;
+		 border:1px  #ffcccc;
+		 padding:5px;
+		 border-radius:1px;}
+		 .container1 {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+
+.container1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.container1 img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.container1 span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container1 img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+	
+	<!--  #features .row1{
+		 float:left;
+		 width:300px;
+		 overflow:auto;
+		 margin-right:20px;
+	 }
+	 .row1 img{
+		 width:200px;
+		
+	 } -->
+	 
+	 #features{
+		  padding-left:20px;
+		  background-color:#fff;
+		  
+	  
+	 }
+	 .footnote h3{ 
+	  color:#666;
+	 }
+	.footnote h4{ 
+	  color:#3b7a9d;
+	 }
+	 .footnote{
+		 float:left;
+		 width:220px;
+		 color:#999999;
+	 }
+	 #foot-box{
+		 background-color:#fff;
+		 padding-left:20px;
+		 padding-bottom:30px;
+	 }
+	 #footer{
+		 background-color:#dbdbdb;
+		 padding:20px;
+	 }
+	 
+	 .small{
+		 margin-top:-30px;
+		 font-size:15px;
+		 color:#858585;
+	 }
+	 .sub{
+	 background-color:#3b7a9d;
+	 color:#FFF;
+	 font-size:15px;
+	 }
+	 .textbox{
+		 width:210px;
+		 color: #000000;
+		 border:1px solid black;
+		 background-color:#e0e0d1;
+	 }
+	 <!-- .row1 img{
+		 height:140px;
+		 width:100px;
+		 color:#fff;
+		 margin-left:10px;
+		 
+	
+	 } -->
+	 .make-btn{
+		 float:right;
+		 background-color:#996633;
+		 color:#fff;
+		 border-radius:5px solid-black;
+		 width:90px;
+		 height:30px;
+		 padding:10px 0px 0px 20px;
+		 display:block;
+	 }
+	.btn_l{
+		 float:left;
+		 background-color:#996633;
+		 color:#fff;
+		 border-radius:5px solid-black;
+		 width:90px;
+		 height:30px;
+		 padding:10px 0px 0px 20px;
+		 display:block;
+	 }
+			
+	 <!-- .brd{
+		 border-bottom-style:solid;
+		 overflow:auto;
+		 padding-bottom:30px;
+		 border-bottom-color:#d4d4d4;
+	 } -->
+	 <!---.brd_l{
+		 padding:5px 0px 5px 0px;
+		 margin-right:25px;
+		 border-bottom-style:solid;
+		 border-bottom-color:#d4d4d4;
+	 }
+	 .brd_l  a{
+	      color:#3b7a9d;
+	 }
+	 .brd_ a{
+	      color:#3b7a9d;
+	 }--->
+	 #NewsLetter input{
+		 background-color:#e9e9e9;
+		 color:#999999;
+		 width:215px;
+		 margin-bottom:15px;
+		 height:30px;
+		 border-style:none;
+		 border-radius:5px;
+	 }
+	 .CopyRight{
+	 float:left;
+	 }
+	 .Info{
+	 float:right;
+	 }
+	 #slider p{
+		 position:relative;
+		 z-index:2;
+		 bottom:120px;
+		 right:20px;
+		 background-color: #ffcccc;
+		 width:200px;
+		 color:#fff;
+		 padding:20px;
+	 }
+	 
+	 .top
+	 {
+	       float:left;
+	       margin-top:10px;
+		   color:grey;
+		   border-left:3px solid #999;
+		   margin-left:5px;
+		   padding-left:10px;
+	 }
+	 .to,.top
+	 {
+	       font-size:14;
+           float:left;
+	       margin-top:7px;
+		   color:grey;
+	 }
+	 
+	 .pro1 h1{
+	       float:left;
+		   
+		     
+		   }
+     
+		   
+	.footnote
+	{
+	  width:240px;
+	}
+	
+	#features .row1
+	{
+	  width:280px;
+	  
+	  text-align:justify;
+	  margin-left:25px;
+	}
+	.row1 img
+	{
+	    width:256px;
+		height:126px;
+		border:1px solid #dbdbdb;
+		margin-left:3px;
+		 padding:5px;
+		 border-radius:1px;
+		
+	}
+	
+	#third .pro1
+	{
+	 width:260px;
+	 height:200px;
+	 color:#858585;
+	}
+	
+	.pro1 p{
+	float:left;
+	font-size:18px;}
+	
+	#third .q{	font-size:30px;
+	float:left;}
+	
+	#features .one{
+	border-top:2px solid #858585;
+	
+}
+	 </style>
+
+</head>
+<body>
+<div id="container">
+	<div id="header" class="row">
+       <div class="lg">
+				<img style="float:left;"src="images/pet-shop-logo-vector.jpg" />
+				<span style="float:left;" class="logo"><b>PetPouch</b></span>
+				<p class="small">Pet Services Shop</p>
+			</div>
+			 
+			
+			<div class="search-box">
+			
+			    <p class="to">Tel:+92 333 6753645</p><p class="top">Mail:Petpouch@gmail.com</p>
+				<form>
+				   <input class="textbox" type="text" placeholder="  Search Our Website..."></input>
+				   <a href="#">Search </a>
+				</form>
+				<br>
+				
+			
+			</div>
+
+	</div>
+ <hr>
+	
+	<div  id="nav-bar" class="row">
+              
+       <ul class="nav">
+		<li class="active"><a href="WithImages.html">Home</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href="contact us.html">Contact</a></li>
+		<li><a href="#">Other</a></li>
+		</ul>	
+		
+	</div>
+		
+	<div id="slider" class="row">
+		<img style="float:right;opacity:50%" src="images/istockphoto-1457916748-612x612.jpg" alt="image not found"/>
+   
+        <br><br><h1 style="text-align:center;color:#996633;font-size:50px;font-family:cursive;">OUR SERVICES</h1><br><br>
+		<br><br><br><br><br><br><h4 style="text-align:left;color:#996633;font-size:20px;font-family:cursive;">Far far away, behind the word mountains, far from the countries vokalia.</h4>
+        <br>
+    </div>
+	<div style="padding-top:200px;padding-bottom:120px;">
+	
+		<img  style="margin:0px 0px 0px 150px;" width="1000px" src="images/12345.png"/>
+	</div>
+	<hr>
+	
+	<div style="height:50px;">
+		<h1 style="color:#996633;text-align:center;font-size:35px;background-color:#ffcccc;font-family:cursive;">Pet Clothing</h1>
+				   
+	</div>
+				<br>
+		  <br>
+	<div id="features" class="row">
+			  
+			    <div id="first" class="row1">
+				
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/blog-lg1.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Grey Hoodie</h3>
+					   
+					   </div>
+					  
+
+				</div>
+				
+				<div id="second" class="row1">
+				      
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/blog-lg2.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Black Hoodie</h3>
+					  
+					   </div>
+				</div>
+				<div id="third" class="row1">
+					 <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/blog-lg3.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Yellow Hoodie</h3>
+					   
+					   </div>
+				</div>
+				
+				 <div id="first" class="row1">
+				
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/blog-lg4.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Light Blue Hoodie</h3>
+					   
+					   </div>
+					  
+
+				</div>
+				<div id="second" class="row1">
+				      
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/banner-img2.png" alt="image not found"/>
+					   <h3 style="text-align:center;">Red Hoodie</h3>
+					  
+					   </div>
+				</div>
+				<div id="third" class="row1">
+					 <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item3.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Pink Hoodie</h3>
+					   
+					   </div>
+				</div>
+				
+				
+				
+				 
+				 
+				 </div>
+				 
+				 
+				 <!----->
+				 <br>
+				 <br>
+				 <br>
+				 <br>
+				 <br>
+				 <br>
+				 <div style="height:50px;">
+		<h1 style="color:#996633;text-align:center;font-size:35px;background-color:#ffcccc;font-family:cursive;">Pet Foodies</h1>
+				   
+	</div>
+				 
+				 <br>
+				 <br>
+				 <div id="features" class="row">
+			  
+			    <div id="first" class="row1">
+				
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item9.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 1</h3>
+					   
+					   </div>
+					  
+
+				</div>
+				<div id="second" class="row1">
+				      
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item14.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 2</h3>
+					  
+					   </div>
+				</div>
+				<div id="third" class="row1">
+					 <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item11.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 3</h3>
+					   
+					   </div>
+				</div>
+				
+				<div id="first" class="row1">
+				
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item6.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 4</h3>
+					   
+					   </div>
+					  
+
+				</div>
+				<div id="second" class="row1">
+				      
+					   <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item16.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 5</h3>
+					  
+					   </div>
+				</div>
+				<div id="third" class="row1">
+					 <div class="one">
+					   <br>
+					   <br>
+					   <img style="width:250px;height:200px;" src="images/item13.jpg" alt="image not found"/>
+					   <h3 style="text-align:center;">Item 6</h3>
+					   
+					   </div>
+				</div>
+				
+				
+				
+				
+				 
+				 </div>
+				 <div style="background-color:#ffcccc; padding:40px; text-align:center;">
+    
+    <h1 style="color:#996633; font-family:cursive;">What Our Customers Say</h1>
+
+    <div style="margin-top:30px;">
+        <p style="font-size:22px; color:#f4b400;">★★★★★</p>
+        <p style="font-size:18px; color:#555;">
+            "Amazing quality! My pet absolutely loved the hoodie."
+        </p>
+        <p style="font-weight:bold; color:#996633;">– Sara Khan</p>
+    </div>
+
+    <div style="margin-top:30px;">
+        <p style="font-size:22px; color:#f4b400;">★★★★★</p>
+        <p style="font-size:18px; color:#555;">
+            "Fast delivery and excellent customer service. Highly recommended!"
+        </p>
+        <p style="font-weight:bold; color:#996633;">– Ahmed Ali</p>
+    </div>
+
+</div>
+
+				<hr><div class="container1">
+  <img src="images/55.jpg" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO</p>
+	<p>John Doe</p>
+		</div>
+
+	<div class="container1">
+  <img src="images/66.jpg" alt="Avatar" style="width:90px">
+  <p><span >Rebecca Flex.</span> CEO.</p>
+  <p>No one is better than John Doe.</p>
+	</div>
+	<<br><br><br><br><br><br><hr><div style="float:left;" id="contact" class="footnote">
+					     <h3>Contact Details</h3>
+						 <p>PetPouch<br>Bulberg,Lahore
+						 <br>Town
+						 <br>2893
+						 <br>Tel:+92 333 6753645
+						 <br>Fax:6784 46839874
+						 <br>Email:petpouch@gmail.com </p>
+					  </div>
+					  <div id="links"  class="footnote">
+					  <h3>Quick Link</h3>
+					  <div class="brd_l"><a href="file:///C:/Users/ALFA%20TECH/Desktop/New%20folder/WithImages.html">HOME</a></div>
+					  <div class="brd_l"><a href="file:///C:/Users/ALFA%20TECH/Desktop/New%20folder/services.html">SERVICES</a></div>
+					  <div class="brd_l"><a href="file:///C:/Users/ALFA%20TECH/Desktop/New%20folder/about.html">ABOUT</a></div>
+					  <div class="brd_l"><a href="file:///C:/Users/ALFA%20TECH/Desktop/New%20folder/contact%20us.html">CONTACT</a></div>
+					  <div class="brd_1"><a href="#">OTHER</a></div>
+					  </div>
+					  <div id="blog" class="footnote">
+					  <h3>From The Blog</h3>
+					  <h4>Blog Post Title</h4>
+					  <p>Posted by Admin on 00.00.00000</p>
+					  <br>
+					  <br>
+					  <a class="btn_l" href="#"><b>Read More</b></a>
+					  </div>
+					  <div id="NewsLetter" class="footnote">
+					  <h3>For Help Contact Us</h3>
+					  <input type="text" placeholder=" Name     "></input>
+					  <input type="text" placeholder=" Email     "></input>
+					  <br>
+					  
+					  <br><br><a class="btn_l" href="#"><b>Help</b></a>
+					  </div>
+				
+				</div>
+				<div id="footer" class="row">
+				       <div class="CopyRight">
+		                     Copyright&copy;
+		               </div>
+		               <div class="Info"> Additional Info</div>
+				</div>
+				</body>
+				</html>
+	
